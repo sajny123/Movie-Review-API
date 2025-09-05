@@ -1,0 +1,71 @@
+GET http://localhost:4000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU2FqaWQiLCJpYXQiOjE3NTcwMzcxODYsImV4cCI6MTc1NzAzODA4Nn0.rMY22rlqotzwDhPSkM9VT_a7yNGmU4uHfPHq704vm_0
+
+###
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token": 
+"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU2FqaWQiLCJwYXNzd29yZCI6IiQyYiQxMCRxdDlsTVZLOGc1MzMyODBiV29aWFMudTRMbjNQWUZXSlZhNDBlMkRFeUhVRGcyNmh4L3llQyIsImlhdCI6MTc1Njk0NDU1OH0.izmV_AvZyF7MIDuXHKQmnKSMN6wdy6qAsU3neA05Sys"}
+
+###
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+    "token": 
+"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU2FqaWQiLCJwYXNzd29yZCI6IiQyYiQxMCRxdDlsTVZLOGc1MzMyODBiV29aWFMudTRMbjNQWUZXSlZhNDBlMkRFeUhVRGcyNmh4L3llQyIsImlhdCI6MTc1Njk0NDU1OH0.izmV_AvZyF7MIDuXHKQmnKSMN6wdy6qAsU3neA05Sys"}
+
+###
+POST http://localhost:4000/users 
+Content-Type: application/json
+
+{
+    "name": "Sajid",
+    "password": "password"
+}
+  
+
+###
+
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "name": "Sajid",
+    "password": "password"
+  
+}
+
+###
+POST http://localhost:3000/movies
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU2FqaWQiLCJpYXQiOjE3NTcwMzcyODYsImV4cCI6MTc1NzAzODE4Nn0.nZRJy4Fz-DihmlPECMjKqf_VfcVIc2LMc30bneSKvAU
+Content-Type: application/json
+
+{
+   "title": "Inception",
+    "review": "Greatest movie ever",
+    "rating": "5/5"
+}
+
+### 
+POST http://localhost:3000/movies
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU2FqaWQiLCJpYXQiOjE3NTcwMzcxODYsImV4cCI6MTc1NzAzODA4Nn0.rMY22rlqotzwDhPSkM9VT_a7yNGmU4uHfPHq704vm_0
+Content-Type: application/json
+
+{
+    "title": "Good Will Hunting",
+    "review": "Amazing",
+    "rating": "5/5"
+}
+
+
+###
+GET http://localhost:3000/movies
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU2FqaWQiLCJpYXQiOjE3NTcwMzcxODYsImV4cCI6MTc1NzAzODA4Nn0.rMY22rlqotzwDhPSkM9VT_a7yNGmU4uHfPHq704vm_0
+
+###
+GET http://localhost:3000/movies/Inception
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU2FqaWQiLCJpYXQiOjE3NTcwMzcxODYsImV4cCI6MTc1NzAzODA4Nn0.rMY22rlqotzwDhPSkM9VT_a7yNGmU4uHfPHq704vm_0
+
