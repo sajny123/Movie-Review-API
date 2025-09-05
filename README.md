@@ -11,18 +11,23 @@ A simple Movie Review API built with Node.js, Express, and JWT authentication.
    git clone <your-repo-url>
    cd movie-api
    
-2. **Install dependincies**  
+2. **Install dependencies**  
+   ```bash
    npm install
+   ```
 
 3. **Create a .env file in the root with the following:**  
+    ```bash
     ACCESS_TOKEN_SECRET=<your_access_token_secret>
     REFRESH_TOKEN_SECRET=<your_refresh_token_secret>
 
-4. **Start the servers**  
+4. **Start the servers** 
+    ```bash
    node authServer.js
-   //Runs on http://localhost:4000
+   ```bash
    node server.js
-   //Runs on http://localhost:3000
+   ```
+   
 
 ---
 
@@ -30,7 +35,7 @@ A simple Movie Review API built with Node.js, Express, and JWT authentication.
 1. Register
 POST http://localhost:4000/users
 Content-Type: application/json
-
+```json
 {
   "name": "alice",
   "password": "password123"
@@ -39,7 +44,7 @@ Content-Type: application/json
 2. Login
 POST http://localhost:4000/login
 Content-Type: application/json
-
+```json
 {
   "name": "alice",
   "password": "password123"
@@ -55,7 +60,7 @@ Response:
 POST http://localhost:3000/movies
 Authorization: Bearer <JWT_ACCESS_TOKEN>
 Content-Type: application/json
-
+```json
 {
   "title": "Inception",
   "review": "Mind-bending sci-fi",
@@ -65,7 +70,7 @@ Content-Type: application/json
 4. Get All Movies
 GET http://localhost:3000/movies
 Authorization: Bearer <JWT_ACCESS_TOKEN>
-
+```json
 Response: 
 [
   {
@@ -78,7 +83,7 @@ Response:
 5. Get a Specific Movie
 GET http://localhost:3000/movies/Inception
 Authorization: Bearer <JWT_ACCESS_TOKEN>
-
+```json
 Response: 
 {
   "title": "Inception",
