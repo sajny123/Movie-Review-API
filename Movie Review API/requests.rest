@@ -40,11 +40,11 @@ Content-Type: application/json
 
 ###
 POST http://localhost:3000/movies
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU2FqaWQiLCJpYXQiOjE3NTcwMzcyODYsImV4cCI6MTc1NzAzODE4Nn0.nZRJy4Fz-DihmlPECMjKqf_VfcVIc2LMc30bneSKvAU
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU2FqaWQiLCJpYXQiOjE3NTcxMjM1NTksImV4cCI6MTc1NzEyNDQ1OX0.J8pI6VmyLNkY6Op0kniXYG6PYGIPPBviT53LPWS0YRc
 Content-Type: application/json
 
 {
-   "title": "Inception",
+   "title": "Cars",
     "review": "Greatest movie ever",
     "rating": "5/5"
 }
@@ -60,12 +60,15 @@ Content-Type: application/json
     "rating": "5/5"
 }
 
+###
+DELETE http://localhost:3000/movies/Cars
+
 
 ###
 GET http://localhost:3000/movies
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU2FqaWQiLCJpYXQiOjE3NTcwMzcxODYsImV4cCI6MTc1NzAzODA4Nn0.rMY22rlqotzwDhPSkM9VT_a7yNGmU4uHfPHq704vm_0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU2FqaWQiLCJpYXQiOjE3NTcxMjM1NTksImV4cCI6MTc1NzEyNDQ1OX0.J8pI6VmyLNkY6Op0kniXYG6PYGIPPBviT53LPWS0YRc
 
 ###
 GET http://localhost:3000/movies/Inception
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU2FqaWQiLCJpYXQiOjE3NTcwMzcxODYsImV4cCI6MTc1NzAzODA4Nn0.rMY22rlqotzwDhPSkM9VT_a7yNGmU4uHfPHq704vm_0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU2FqaWQiLCJpYXQiOjE3NTcxMjM1NTksImV4cCI6MTc1NzEyNDQ1OX0.J8pI6VmyLNkY6Op0kniXYG6PYGIPPBviT53LPWS0YRc
 

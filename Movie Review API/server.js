@@ -50,6 +50,20 @@ app.post('/movies', authenticateToken, async (req, res) => {
     res.status(201).send();
 })
 
+app.delete('/movies/:title', authenticateToken, async (req, res) => {
+    const user = req.user.name;
+    if (!movies[user]) {
+        return res.sendStatus(404);
+    }
+    const index = movies[user].findIndex(movie => movie.title === req.params.title);
+    if (index === -1) {
+        return res.sendStatus(404);
+    }
+    
+    movies[user].splice(index, 1);
+    res.sendStatus(204);
+})
+
 // app.post
 
 app.listen(3000);
